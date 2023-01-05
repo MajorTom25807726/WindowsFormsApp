@@ -40,6 +40,12 @@
             this.performanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.m11105508PerformanceSet = new WindowsFormsApp_0105.M11105508PerformanceSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.search_keyword_ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.search_keyword_ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.site_infoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,29 +58,50 @@
             this.performanceTableAdapter1 = new WindowsFormsApp_0105.M11105508PerformanceSetTableAdapters.PerformanceTableAdapter();
             this.site_infoTableAdapter = new WindowsFormsApp_0105.M11105508SiteSetTableAdapters.Site_infoTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp_0105.M11105508SiteSetTableAdapters.TableAdapterManager();
-            this.search_keyword_ToolStrip = new System.Windows.Forms.ToolStrip();
-            this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.search_keyword_ToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.m11105508Computer_infoSet = new WindowsFormsApp_0105.M11105508Computer_infoSet();
+            this.computer_infoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computer_infoTableAdapter = new WindowsFormsApp_0105.M11105508Computer_infoSetTableAdapters.Computer_infoTableAdapter();
+            this.tableAdapterManager1 = new WindowsFormsApp_0105.M11105508Computer_infoSetTableAdapters.TableAdapterManager();
+            this.computer_infoDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.search_keyword_ToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.keywordToolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.keywordToolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.search_keyword_ToolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.fillToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.fillToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performanceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m11105508PerformanceSet)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.fillToolStrip.SuspendLayout();
+            this.search_keyword_ToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m11105508SiteSet)).BeginInit();
-            this.search_keyword_ToolStrip.SuspendLayout();
-            this.fillToolStrip.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m11105508Computer_infoSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_infoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_infoDataGridView)).BeginInit();
+            this.search_keyword_ToolStrip1.SuspendLayout();
+            this.fillToolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -163,6 +190,57 @@
             this.tabPage2.Text = "Country_site";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // fillToolStrip
+            // 
+            this.fillToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(258, 23);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(54, 25);
+            this.fillToolStrip.TabIndex = 1;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(42, 22);
+            this.fillToolStripButton.Text = "Reset";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
+            // 
+            // search_keyword_ToolStrip
+            // 
+            this.search_keyword_ToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.search_keyword_ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.keywordToolStripLabel,
+            this.keywordToolStripTextBox,
+            this.search_keyword_ToolStripButton});
+            this.search_keyword_ToolStrip.Location = new System.Drawing.Point(3, 23);
+            this.search_keyword_ToolStrip.Name = "search_keyword_ToolStrip";
+            this.search_keyword_ToolStrip.Size = new System.Drawing.Size(255, 25);
+            this.search_keyword_ToolStrip.TabIndex = 1;
+            this.search_keyword_ToolStrip.Text = "search_keyword_ToolStrip";
+            // 
+            // keywordToolStripLabel
+            // 
+            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
+            this.keywordToolStripLabel.Size = new System.Drawing.Size(92, 22);
+            this.keywordToolStripLabel.Text = "Country Name:";
+            // 
+            // keywordToolStripTextBox
+            // 
+            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
+            this.keywordToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // search_keyword_ToolStripButton
+            // 
+            this.search_keyword_ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.search_keyword_ToolStripButton.Name = "search_keyword_ToolStripButton";
+            this.search_keyword_ToolStripButton.Size = new System.Drawing.Size(49, 22);
+            this.search_keyword_ToolStripButton.Text = "Search";
+            this.search_keyword_ToolStripButton.Click += new System.EventHandler(this.search_keyword_ToolStripButton_Click_1);
+            // 
             // site_infoDataGridView
             // 
             this.site_infoDataGridView.AutoGenerateColumns = false;
@@ -174,7 +252,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.site_infoDataGridView.DataSource = this.site_infoBindingSource;
-            this.site_infoDataGridView.Location = new System.Drawing.Point(0, 124);
+            this.site_infoDataGridView.Location = new System.Drawing.Point(0, 144);
             this.site_infoDataGridView.Name = "site_infoDataGridView";
             this.site_infoDataGridView.RowTemplate.Height = 24;
             this.site_infoDataGridView.Size = new System.Drawing.Size(795, 302);
@@ -238,56 +316,158 @@
             this.tableAdapterManager.Site_infoTableAdapter = this.site_infoTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp_0105.M11105508SiteSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // search_keyword_ToolStrip
+            // tabPage3
             // 
-            this.search_keyword_ToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.search_keyword_ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.keywordToolStripLabel,
-            this.keywordToolStripTextBox,
-            this.search_keyword_ToolStripButton});
-            this.search_keyword_ToolStrip.Location = new System.Drawing.Point(3, 3);
-            this.search_keyword_ToolStrip.Name = "search_keyword_ToolStrip";
-            this.search_keyword_ToolStrip.Size = new System.Drawing.Size(255, 25);
-            this.search_keyword_ToolStrip.TabIndex = 1;
-            this.search_keyword_ToolStrip.Text = "search_keyword_ToolStrip";
+            this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.fillToolStrip1);
+            this.tabPage3.Controls.Add(this.search_keyword_ToolStrip1);
+            this.tabPage3.Controls.Add(this.computer_infoDataGridView);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(795, 426);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Segment_Search";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // keywordToolStripLabel
+            // m11105508Computer_infoSet
             // 
-            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
-            this.keywordToolStripLabel.Size = new System.Drawing.Size(92, 22);
-            this.keywordToolStripLabel.Text = "Country Name:";
+            this.m11105508Computer_infoSet.DataSetName = "M11105508Computer_infoSet";
+            this.m11105508Computer_infoSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // keywordToolStripTextBox
+            // computer_infoBindingSource
             // 
-            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
-            this.keywordToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.computer_infoBindingSource.DataMember = "Computer_info";
+            this.computer_infoBindingSource.DataSource = this.m11105508Computer_infoSet;
             // 
-            // search_keyword_ToolStripButton
+            // computer_infoTableAdapter
             // 
-            this.search_keyword_ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.search_keyword_ToolStripButton.Name = "search_keyword_ToolStripButton";
-            this.search_keyword_ToolStripButton.Size = new System.Drawing.Size(49, 22);
-            this.search_keyword_ToolStripButton.Text = "Search";
-            this.search_keyword_ToolStripButton.Click += new System.EventHandler(this.search_keyword_ToolStripButton_Click_1);
+            this.computer_infoTableAdapter.ClearBeforeFill = true;
             // 
-            // fillToolStrip
+            // tableAdapterManager1
             // 
-            this.fillToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillToolStripButton});
-            this.fillToolStrip.Location = new System.Drawing.Point(258, 3);
-            this.fillToolStrip.Name = "fillToolStrip";
-            this.fillToolStrip.Size = new System.Drawing.Size(54, 25);
-            this.fillToolStrip.TabIndex = 1;
-            this.fillToolStrip.Text = "fillToolStrip";
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.Computer_infoTableAdapter = this.computer_infoTableAdapter;
+            this.tableAdapterManager1.UpdateOrder = WindowsFormsApp_0105.M11105508Computer_infoSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // fillToolStripButton
+            // computer_infoDataGridView
             // 
-            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(42, 22);
-            this.fillToolStripButton.Text = "Reset";
-            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
+            this.computer_infoDataGridView.AutoGenerateColumns = false;
+            this.computer_infoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.computer_infoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13});
+            this.computer_infoDataGridView.DataSource = this.computer_infoBindingSource;
+            this.computer_infoDataGridView.Location = new System.Drawing.Point(0, 121);
+            this.computer_infoDataGridView.Name = "computer_infoDataGridView";
+            this.computer_infoDataGridView.RowTemplate.Height = 24;
+            this.computer_infoDataGridView.Size = new System.Drawing.Size(787, 305);
+            this.computer_infoDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "SystemID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "SystemID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Computer";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Computer";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Manufacturer";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Manufacturer";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "TotalCores";
+            this.dataGridViewTextBoxColumn9.HeaderText = "TotalCores";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "YearAppear";
+            this.dataGridViewTextBoxColumn10.HeaderText = "YearAppear";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Segment";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Segment";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "SiteID";
+            this.dataGridViewTextBoxColumn12.HeaderText = "SiteID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "List";
+            this.dataGridViewTextBoxColumn13.HeaderText = "List";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // search_keyword_ToolStrip1
+            // 
+            this.search_keyword_ToolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.search_keyword_ToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.keywordToolStripLabel1,
+            this.keywordToolStripTextBox1,
+            this.search_keyword_ToolStripButton1});
+            this.search_keyword_ToolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.search_keyword_ToolStrip1.Name = "search_keyword_ToolStrip1";
+            this.search_keyword_ToolStrip1.Size = new System.Drawing.Size(224, 25);
+            this.search_keyword_ToolStrip1.TabIndex = 1;
+            this.search_keyword_ToolStrip1.Text = "search_keyword_ToolStrip1";
+            // 
+            // keywordToolStripLabel1
+            // 
+            this.keywordToolStripLabel1.Name = "keywordToolStripLabel1";
+            this.keywordToolStripLabel1.Size = new System.Drawing.Size(61, 22);
+            this.keywordToolStripLabel1.Text = "Segemnt:";
+            // 
+            // keywordToolStripTextBox1
+            // 
+            this.keywordToolStripTextBox1.Name = "keywordToolStripTextBox1";
+            this.keywordToolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
+            // search_keyword_ToolStripButton1
+            // 
+            this.search_keyword_ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.search_keyword_ToolStripButton1.Name = "search_keyword_ToolStripButton1";
+            this.search_keyword_ToolStripButton1.Size = new System.Drawing.Size(49, 22);
+            this.search_keyword_ToolStripButton1.Text = "Search";
+            this.search_keyword_ToolStripButton1.Click += new System.EventHandler(this.search_keyword_ToolStripButton1_Click_1);
+            // 
+            // fillToolStrip1
+            // 
+            this.fillToolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillToolStripButton1});
+            this.fillToolStrip1.Location = new System.Drawing.Point(227, 3);
+            this.fillToolStrip1.Name = "fillToolStrip1";
+            this.fillToolStrip1.Size = new System.Drawing.Size(54, 25);
+            this.fillToolStrip1.TabIndex = 1;
+            this.fillToolStrip1.Text = "fillToolStrip1";
+            // 
+            // fillToolStripButton1
+            // 
+            this.fillToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton1.Name = "fillToolStripButton1";
+            this.fillToolStripButton1.Size = new System.Drawing.Size(42, 22);
+            this.fillToolStripButton1.Text = "Reset";
+            this.fillToolStripButton1.Click += new System.EventHandler(this.fillToolStripButton1_Click);
             // 
             // Form1
             // 
@@ -305,13 +485,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.m11105508PerformanceSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            this.search_keyword_ToolStrip.ResumeLayout(false);
+            this.search_keyword_ToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.site_infoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m11105508SiteSet)).EndInit();
-            this.search_keyword_ToolStrip.ResumeLayout(false);
-            this.search_keyword_ToolStrip.PerformLayout();
-            this.fillToolStrip.ResumeLayout(false);
-            this.fillToolStrip.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m11105508Computer_infoSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_infoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_infoDataGridView)).EndInit();
+            this.search_keyword_ToolStrip1.ResumeLayout(false);
+            this.search_keyword_ToolStrip1.PerformLayout();
+            this.fillToolStrip1.ResumeLayout(false);
+            this.fillToolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -347,6 +536,26 @@
         private System.Windows.Forms.ToolStripButton search_keyword_ToolStripButton;
         private System.Windows.Forms.ToolStrip fillToolStrip;
         private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.TabPage tabPage3;
+        private M11105508Computer_infoSet m11105508Computer_infoSet;
+        private System.Windows.Forms.BindingSource computer_infoBindingSource;
+        private M11105508Computer_infoSetTableAdapters.Computer_infoTableAdapter computer_infoTableAdapter;
+        private M11105508Computer_infoSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.DataGridView computer_infoDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.ToolStrip search_keyword_ToolStrip1;
+        private System.Windows.Forms.ToolStripLabel keywordToolStripLabel1;
+        private System.Windows.Forms.ToolStripTextBox keywordToolStripTextBox1;
+        private System.Windows.Forms.ToolStripButton search_keyword_ToolStripButton1;
+        private System.Windows.Forms.ToolStrip fillToolStrip1;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton1;
     }
 }
 

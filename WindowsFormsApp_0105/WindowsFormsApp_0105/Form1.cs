@@ -23,6 +23,10 @@ namespace WindowsFormsApp_0105
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'm11105508Computer_infoSet.Computer_info' 資料表。您可以視需要進行移動或移除。
+            this.computer_infoTableAdapter.Fill(this.m11105508Computer_infoSet.Computer_info);
+            // TODO: 這行程式碼會將資料載入 'm11105508Computer_infoSet.Computer_info' 資料表。您可以視需要進行移動或移除。
+            this.computer_infoTableAdapter.Fill(this.m11105508Computer_infoSet.Computer_info);
             // TODO: 這行程式碼會將資料載入 'm11105508SiteSet.Site_info' 資料表。您可以視需要進行移動或移除。
             this.site_infoTableAdapter.Fill(this.m11105508SiteSet.Site_info);
             // TODO: 這行程式碼會將資料載入 'm11105508PerformanceSet.Performance' 資料表。您可以視需要進行移動或移除。
@@ -61,6 +65,45 @@ namespace WindowsFormsApp_0105
             try
             {
                 this.site_infoTableAdapter.Fill(this.m11105508SiteSet.Site_info);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void search_keyword_ToolStripButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, keywordToolStripTextBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void search_keyword_ToolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, keywordToolStripTextBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillToolStripButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computer_infoTableAdapter.Fill(this.m11105508Computer_infoSet.Computer_info);
             }
             catch (System.Exception ex)
             {
