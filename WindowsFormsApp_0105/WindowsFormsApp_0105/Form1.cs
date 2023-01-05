@@ -23,6 +23,8 @@ namespace WindowsFormsApp_0105
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: 這行程式碼會將資料載入 'm11105508DataSet.List_info' 資料表。您可以視需要進行移動或移除。
+            this.list_infoTableAdapter.Fill(this.m11105508DataSet.List_info);
             // TODO: 這行程式碼會將資料載入 'm11105508Computer_infoSet.Computer_info' 資料表。您可以視需要進行移動或移除。
             this.computer_infoTableAdapter.Fill(this.m11105508Computer_infoSet.Computer_info);
             // TODO: 這行程式碼會將資料載入 'm11105508Computer_infoSet.Computer_info' 資料表。您可以視需要進行移動或移除。
@@ -77,7 +79,7 @@ namespace WindowsFormsApp_0105
         {
             try
             {
-                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, keywordToolStripTextBox1.Text);
+                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, listToolStripTextBox.Text);
             }
             catch (System.Exception ex)
             {
@@ -90,7 +92,7 @@ namespace WindowsFormsApp_0105
         {
             try
             {
-                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, keywordToolStripTextBox1.Text);
+                this.computer_infoTableAdapter.Search_keyword_(this.m11105508Computer_infoSet.Computer_info, listToolStripTextBox.Text);
             }
             catch (System.Exception ex)
             {
@@ -104,6 +106,58 @@ namespace WindowsFormsApp_0105
             try
             {
                 this.computer_infoTableAdapter.Fill(this.m11105508Computer_infoSet.Computer_info);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void search_keyword_ToolStripButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.list_infoTableAdapter.Search_keyword_(this.m11105508DataSet.List_info, ((double)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(double)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void search_keyword_ToolStripButton2_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.list_infoTableAdapter.Search_keyword_(this.m11105508DataSet.List_info, ((double)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(double)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void desc_listToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computer_info1TableAdapter.desc_list(this.m11105508Computer_infoSet.Computer_info1, ((double)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(double)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void desc_listToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.computer_info1TableAdapter.desc_list(this.m11105508Computer_infoSet.Computer_info1, ((double)(System.Convert.ChangeType(listToolStripTextBox.Text, typeof(double)))));
             }
             catch (System.Exception ex)
             {

@@ -57,6 +57,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>M11105508Computer_infoSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="M11105508DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>M11105508DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="M11105508PerformanceSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,6 +96,17 @@
     </None>
     <None Include="M11105508Computer_infoSet.xss">
       <DependentUpon>M11105508Computer_infoSet.xsd</DependentUpon>
+    </None>
+    <None Include="M11105508DataSet.xsc">
+      <DependentUpon>M11105508DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="M11105508DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>M11105508DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M11105508DataSet.xss">
+      <DependentUpon>M11105508DataSet.xsd</DependentUpon>
     </None>
     <None Include="M11105508PerformanceSet.xsc">
       <DependentUpon>M11105508PerformanceSet.xsd</DependentUpon>
